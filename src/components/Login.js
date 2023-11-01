@@ -8,7 +8,12 @@ const Login = () => {
             type="email"
             label="Email"
             name="email"
-            sx={{ marginBottom: "15px" }}
+            sx={{ marginBottom: "25px" }}
+            inputProps={{
+              style: {
+                height: "20px",
+              },
+            }}
           ></TextField>
         </FormControl>
         <FormControl fullWidth required>
@@ -16,11 +21,16 @@ const Login = () => {
             type="password"
             label="Password"
             name="password"
-            sx={{ marginBottom: "15px" }}
+            sx={{ marginBottom: "25px" }}
+            inputProps={{
+              style: {
+                height: "20px",
+              },
+            }}
           ></TextField>
         </FormControl>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Button variant="outlined" size="large" type="submit">
+          <Button variant="contained" size="large" type="submit">
             Submit
           </Button>
         </Box>
