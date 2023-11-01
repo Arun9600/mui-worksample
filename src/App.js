@@ -1,4 +1,3 @@
-import Papper from "./components/Paper";
 import {
   Container,
   Grid,
@@ -6,6 +5,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
+import Login from "./components/Login";
 const App = () => {
   const theme = createTheme({
     components: {
@@ -26,13 +26,22 @@ const App = () => {
   });
   return (
     <ThemeProvider theme={theme}>
-      <Box my={4}>
+      <Box
+        sx={{
+          backgroundColor: "#f1f1f1",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Container>
-          <Grid container spacing={2}>
-            <Papper />
-            <Papper />
-            <Papper />
-            <Papper />
+          <Grid container>
+            <Grid item xl={3} lg={3} md={3} sm={2} xs={12}></Grid>
+            <Grid item xl={6} lg={6} md={6} sm={8} xs={12}>
+              <Login />
+            </Grid>
+            <Grid item xl={3} lg={3} md={3} sm={2} xs={12}></Grid>
           </Grid>
         </Container>
       </Box>
