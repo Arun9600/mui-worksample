@@ -14,7 +14,7 @@ const Login = () => {
     <>
       <Box sx={{ backgroundColor: "#fff" }} padding={6}>
         <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
-          <FormControl fullWidth required>
+          <FormControl fullWidth>
             <TextField
               type="email"
               label="Email"
@@ -37,7 +37,7 @@ const Login = () => {
               helperText={errors.email?.message}
             ></TextField>
           </FormControl>
-          <FormControl fullWidth required>
+          <FormControl fullWidth>
             <TextField
               type="password"
               label="Password"
