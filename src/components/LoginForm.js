@@ -1,6 +1,6 @@
 import { Button, Container, FormControl, TextField, Box } from "@mui/material";
 import { useForm } from "react-hook-form";
-const Login = () => {
+const LoginForm = () => {
   const onSubmit = (data) => {
     console.log(data);
   };
@@ -70,4 +70,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;
